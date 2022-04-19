@@ -1,0 +1,91 @@
+body {
+	font-family: Arial, Sans-serif, Helvetica;
+	background: #e8e8e8;
+}
+
+header{
+    background-color: white;  
+}
+ 
+nav{
+    background-color: white;
+}
+
+section{
+    background-color: white;
+    grid-column: 1/4;
+}
+
+aside{
+    background-color: aqua;
+    grid-column: 4/5;
+}
+
+footer{
+    background-color:antiquewhite;
+}
+
+main{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+ul,ol{ 
+
+    list-style: none;
+    display: inline-block;
+}
+.menu{
+    padding: 0px 20px;
+    text-align: center;
+    font-family:Arial,Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: flex-start;
+
+}
+
+.menu>li{
+    float: left;
+}
+
+.menu li a{
+    background-color: black;
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 20px 80px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: rgb(252, 173, 5);
+}
+
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;
+}
+
+.menu li:hover>ul{
+    display: block;
+}
+.menu li ul li{
+ position: relative;
+}
+
+.menu li ul li ul{
+    right: 140px;
+}
+    
+
+.hojadeestilo{
+    display:flex;
+    flex-direction:column;
+}
+
