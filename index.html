@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Proyecto de sitio Web 2022-16-1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+h1,h2,h3,h4,h5,h6 {font-size:60px}
+body {font-size:20px}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
 </head>
 <body>
-    <header>
-        <h1> Proyecto de sitio Web 2022 - 16-1</h1>
-    </header>
-     <nav>
+
+<div class="menu">
+    <nav>
         <link rel="stylesheet" href="Fase-2/estilos.css"> 
         <ul class="menu">
             <li><a href="DSW-Miler-Gualaco/index.html">inicio</a></li>
@@ -23,19 +32,30 @@
             <li><a href="#">Recursos</a>
                             <ul>
                             <li><a href="Fase-2/recursos1.html">MOCKUPS</a></li>
-                            <li><a href="Fase-2/recursos2.html">videos de apoyo</a></li>
+                            <li><a href="Fase-2/recursos2.html">Videos de apoyo</a></li>
                             </ul>
                             </li>
                             <li><a href="#">aprendizaje</a>
                             <ul>
-                            <li><a href="#">aprendizaje 1</a></li>
-                            <li><a href="#">aprendizaje 2</a></li>
+                            <li><a href="aprendizaje1.html">Prueba de conocimiento</a></li>
+                            <li><a href="aprendizaje2.html">prueba de conocimiento de los videos</a></li>
                             </ul>
                             </li>
             <li><a href="Fase-2/acercade1.html"> Acerca de</a></li>
         </ul>
      </nav>
+</div>
 
+
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Proyecto de sitio Web 2022 - 16-1</h1>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
         <h3>Proposito del sitio web</h3>
         <P>
             Este sitio web se realiza para la materia electiva diseño de sitios web de la carrera de ingeniera de sistemas,
@@ -58,7 +78,41 @@
             La tematica abordada en este sitio web es las hojas estilo cascada y los frameworks , en este se explicara a detalle que ess una hoja estilo cascada , sus caracteristicas ,como usarlas y los diferentes Frameworks.
         </p>
 
+      </div>
+
+      <div class="plugin">
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=777010372459652" width="600" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="50" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">La mejor forma de predecir tu futuro es crearlo</h1>
+  </div>
+
+</div>
+
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram "></i>
+    <i class="fa fa-snapchat "></i>
+    <i class="fa fa-pinterest-p "></i>
+    <i class="fa fa-twitter "></i>
+    <i class="fa fa-linkedin "></i>
+ </div>
+</footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>

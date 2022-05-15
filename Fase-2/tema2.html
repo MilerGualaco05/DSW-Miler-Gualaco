@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="en">
 <head>
-    <meta charset=”UTF-8″ />
-    <title>Document</title>
-
-    
+<title>Proyecto de sitio Web 2022-16-1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+h1,h2,h3,h4,h5,h6 {font-size:60px}
+body {font-size:20px}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
 </head>
-<body> 
-    <header>
-        <h1> Proyecto de sitio Web 2022 - 16-1</h1>
-    </header>
-     <nav>
+<body>
+
+<div class="menu">
+    <nav>
         <link rel="stylesheet" href="estilos.css">
         <ul class="menu">
             <li><a href="DSW-Miler-Gualaco/index.html">inicio</a></li>
@@ -28,21 +37,32 @@
                             </li>
                             <li><a href="#">aprendizaje</a>
                             <ul>
-                            <li><a href="#">aprendizaje 1</a></li>
-                            <li><a href="#">aprendizaje 2</a></li>
+                            <li><a href="aprendizaje1.html">Prueba de conocimiento</a></li>
+                            <li><a href="aprendizaje2.html">prueba de conocimiento de los videos</a></li>
                             </ul>
                             </li>
             <li><a href="acercade1.html">acerca de </a>
             </li>
         </ul>
     </nav>
-   
+    
+</div>
+
+
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Proyecto de sitio Web 2022 - 16-1</h1>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content"> 
     <div class="frameworks">
         <div class="elemento1">
             
             <h3>Frameworks</h3>
             <P>
-                es una biblioteca de estilos genéricos que puede ser usada para implementar diseños web. Aportan una serie de utilidades que pueden ser aprovechadas frecuentemente en los distintos diseños web.
+                Es una biblioteca de estilos genéricos que puede ser usada para implementar diseños web. Aportan una serie de utilidades que pueden ser aprovechadas frecuentemente en los distintos diseños web.
             </P>
         
                <h5>Bootstrap </h5>
@@ -54,9 +74,9 @@
                 Es muy común que las solicitudes de empleo se pida Bootstrap, ya que es una herramienta usada por muchas empresas.
             </p>
             
-            <a href="https://github.com/Dogfalo/materialize"> sitio de github </a>
+            <a href="https://github.com/Dogfalo/materialize"> sitio de github </a> 
         </div>
-        <div class="elemento2"><img src="img/bootstrap.jpg" alt="bootstrap"/></div>
+        <div class="elemento2"><img src="img/bootstrap.jpg" width="700" height="350" alt="bootstrap"/></div>
 
         <div class="elemento3"><h4>Materialize CSS</h4>
 
@@ -72,7 +92,7 @@
 
             <a href="https://github.com/Dogfalo/materialize"> sitio de github </a></div>
 
-        <div class="elemento4"><img src="img\materialize.jpg" alt="materialize" ></div>
+        <div class="elemento4"><img src="img\materialize.jpg" width="700" height="350" alt="materialize" ></div>
 
       
         <div class="elemento5">
@@ -89,9 +109,37 @@
         </div>
 
 
-        <div class="elemento6"><img src="img\bulma-banner.png" alt="bulma"></div>
+        <div class="elemento6"><img src="img\bulma-banner.png" width="700" height="350 alt="bulma"></div>
 
 
     </div>
+        
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">La mejor forma de predecir tu futuro es crearlo</h1>
+</div>
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram "></i>
+    <i class="fa fa-snapchat "></i>
+    <i class="fa fa-pinterest-p "></i>
+    <i class="fa fa-twitter "></i>
+    <i class="fa fa-linkedin "></i>
+ </div>
+</footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
 </html>
